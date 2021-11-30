@@ -1,27 +1,42 @@
 body {
   margin: 0;
-  margin-bottom: 8vh;
-  background: black;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body .header {
+body .wrapper {
+  margin-bottom: 8vh;
+  margin-top: 8vh;
+  background: black;
+  position: relative;
+  min-height: 100%;
+}
+
+body .wrapper .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 8vh;
   width: 100%;
-  background: #222121;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2b2b), to(#525151));
+  background-image: linear-gradient(#2b2b2b, #525151);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1 solid #333333;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
-body .header .headline {
+body .wrapper .header .headline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,26 +45,26 @@ body .header .headline {
           align-items: center;
 }
 
-body .header .headline .fa-universal-access {
+body .wrapper .header .headline .fa-universal-access {
   margin-left: 10px;
   font-size: 28px;
   color: #dfdddd;
 }
 
-body .header .headline h1 {
-  font-size: 18px;
+body .wrapper .header .headline h1 {
+  font-size: 16px;
   color: #dfdddd;
   margin: 10px;
-  font-family: Catamaran, Verdana, sans-serif;
+  font-family: "Roboto Mono", Verdana, Tahoma, sans-serif;
 }
 
-body .header .fa-bars {
+body .wrapper .header .fa-bars {
   color: #dfdddd;
-  font-size: 20px;
+  font-size: 22px;
   margin: 10px;
 }
 
-body .main {
+body .wrapper .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,12 +74,17 @@ body .main {
           flex-direction: column;
   -ms-flex-preferred-size: 360px;
       flex-basis: 360px;
+  min-height: 100%;
 }
 
-body .main article {
+body .wrapper .main article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -73,13 +93,40 @@ body .main article {
           align-items: center;
   -ms-flex-preferred-size: 360px;
       flex-basis: 360px;
-  min-height: 360px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  height: 100%;
   background: #222121;
-  margin: 5px;
+  color: #dfdddd;
+  margin: 5px 1px 5px 1px;
   border: 1px solid #333333;
+}
+
+body .wrapper .main article .first-img img {
+  width: 355px;
+}
+
+body .wrapper .main article .second-img img {
+  width: 355px;
+}
+
+body .wrapper .main article h2 {
+  font-family: "Roboto Mono", Verdana, Tahoma, sans-serif;
+  margin: 5px;
+}
+
+body .wrapper .main article p {
+  font-family: Catamaran, Verdana, Tahoma, sans-serif;
+  margin: 5px;
+}
+
+body .wrapper .main article button {
+  color: #2b2a2a;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#b8b8b8));
+  background-image: linear-gradient(white, #b8b8b8);
 }
 
 body .footer {
@@ -88,17 +135,29 @@ body .footer {
   display: flex;
   height: 8vh;
   width: 100%;
-  background: #222121;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2b2b), to(#525151));
+  background-image: linear-gradient(#2b2b2b, #525151);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1 solid #333333;
-  display: inline;
   position: fixed;
-  bottom: 0;
   right: 0;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  align-items: center;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#525151), to(#272727));
+  background-image: linear-gradient(#525151, #272727);
+}
+
+body .footer .fa-angle-up {
+  margin: 20px;
+  color: #dfdddd;
+  font-size: 22px;
 }
 /*# sourceMappingURL=style.css.map */
