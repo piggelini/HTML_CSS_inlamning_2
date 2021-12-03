@@ -9,22 +9,21 @@ body {
           flex-direction: column;
 }
 
-body .wrapper {
-  margin-bottom: 8vh;
+.wrapper {
+  margin-bottom: 6vh;
   margin-top: 8vh;
   background: black;
   position: relative;
   min-height: 100%;
 }
 
-body .wrapper .header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 8vh;
+  height: 8.3vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2b2b), to(#525151));
-  background-image: linear-gradient(#2b2b2b, #525151);
+  background: #363636;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -36,7 +35,7 @@ body .wrapper .header {
   top: 0;
 }
 
-body .wrapper .header .headline {
+.headline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,26 +44,26 @@ body .wrapper .header .headline {
           align-items: center;
 }
 
-body .wrapper .header .headline .fa-universal-access {
+.headline .fa-universal-access {
   margin-left: 10px;
   font-size: 28px;
   color: #dfdddd;
 }
 
-body .wrapper .header .headline h1 {
+.headline h1 {
   font-size: 16px;
   color: #dfdddd;
   margin: 10px;
   font-family: "Roboto Mono", Verdana, Tahoma, sans-serif;
 }
 
-body .wrapper .header .fa-bars {
+.fa-bars {
   color: #dfdddd;
   font-size: 22px;
   margin: 10px;
 }
 
-body .wrapper .main {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +76,7 @@ body .wrapper .main {
   min-height: 100%;
 }
 
-body .wrapper .main article {
+.main article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,48 +94,50 @@ body .wrapper .main article {
       flex-basis: 360px;
   height: 100%;
   background: #222121;
-  color: #dfdddd;
+  color: #ecebeb;
   margin: 5px 1px 5px 1px;
   border: 1px solid #333333;
 }
 
-body .wrapper .main article .first-img img {
+.main article .first-img img {
   width: 355px;
 }
 
-body .wrapper .main article .second-img img {
+.main article .second-img img {
   width: 355px;
 }
 
-body .wrapper .main article h2 {
+.main article h2 {
   font-family: "Roboto Mono", Verdana, Tahoma, sans-serif;
   margin: 5px;
 }
 
-body .wrapper .main article p {
+.main article p {
   font-family: Catamaran, Verdana, Tahoma, sans-serif;
   margin: 5px;
 }
 
-body .wrapper .main article button {
+.main article button {
   color: #2b2a2a;
   font-size: 1rem;
   border: 1px solid black;
   border-radius: 4px;
   padding: 10px;
   margin: 10px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#b8b8b8));
-  background-image: linear-gradient(white, #b8b8b8);
+  background: #ececec;
 }
 
-body .footer {
+.main article button:hover {
+  background: pink;
+}
+
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 8vh;
+  height: 8.3vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2b2b), to(#525151));
-  background-image: linear-gradient(#2b2b2b, #525151);
+  background: #363636;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -151,11 +152,10 @@ body .footer {
           justify-content: flex-end;
   align-items: center;
   bottom: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#525151), to(#272727));
-  background-image: linear-gradient(#525151, #272727);
+  height: 6vh;
 }
 
-body .footer .fa-angle-up {
+.fa-angle-up {
   margin: 20px;
   color: #dfdddd;
   font-size: 22px;

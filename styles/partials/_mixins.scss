@@ -1,0 +1,10 @@
+@mixin headerFooterStyle{
+    display:flex;
+    height: 8.3vh;
+    width: 100%;
+    background: rgb(54, 54, 54);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+}
