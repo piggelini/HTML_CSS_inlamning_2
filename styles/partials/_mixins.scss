@@ -8,3 +8,29 @@
     position: fixed;
     right: 0;
 }
+
+
+@mixin for-tablet {
+    @media (min-width:481px){
+      @content;
+    }
+  }
+  
+  @mixin for-small-screen {
+    @media (min-width:769px){
+      @content;
+    }
+  }
+  
+  @mixin for-large-screen {
+    @media (min-width:1025px){
+      @content;
+    }
+  }
+  
+  @mixin for-extra-large-screen {
+    @media (min-width:1201px) {
+      @content;
+    }
+  }
+  
