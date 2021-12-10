@@ -208,34 +208,38 @@ body {
   }
 }
 
-.main article .first-img img {
+.main article img {
   width: 355px;
 }
 
 @media (min-width: 481px) {
-  .main article .first-img img {
-    border-radius: 5px;
-  }
-}
-
-.main article .second-img img {
-  width: 355px;
-}
-
-@media (min-width: 481px) {
-  .main article .second-img img {
+  .main article img {
     border-radius: 5px;
   }
 }
 
 .main article h2 {
   font-family: "Roboto Mono", Verdana, Tahoma, sans-serif;
-  margin: 5px;
+  margin: 10px;
 }
 
 .main article p {
   font-family: Catamaran, Verdana, Tahoma, sans-serif;
-  margin: 5px;
+  margin: 10px;
+}
+
+.main article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 10px;
 }
 
 .main article button {
