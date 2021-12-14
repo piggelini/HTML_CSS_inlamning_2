@@ -1,11 +1,3 @@
-@mixin headerFooterStyle{
-    display:flex;
-    
-    background: rgba(54, 54, 54, 0.95);
-    align-items: center;
-    justify-content: space-between;
-}
-
 
 @mixin for-tablet {
     @media (min-width:481px){
